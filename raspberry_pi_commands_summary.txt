@@ -1,0 +1,87 @@
+
+Raspberry Pi Useful Commands Summary
+====================================
+
+🔹 Initial Setup
+----------------
+Find Raspberry Pi Model:
+    cat /sys/firmware/devicetree/base/model
+
+Get Total and Free Memory:
+    free -h
+
+Check OS Version:
+    cat /etc/os-release
+
+Check OS Architecture (32/64-bit):
+    uname -m
+
+🔹 Software Update Commands
+---------------------------
+Update Package List:
+    sudo apt update
+
+Full System Upgrade:
+    sudo apt full-upgrade
+
+Remove Unneeded Packages:
+    sudo apt autoremove
+
+Clean Up Repository:
+    sudo apt-get clean
+
+Exit Terminal:
+    exit
+
+🔹 Restart and Config
+---------------------
+Reboot Raspberry Pi:
+    sudo reboot
+
+System Configuration Tool:
+    sudo raspi-config
+
+🔹 Hostname Configuration
+-------------------------
+View Hostname:
+    hostname
+
+Change Hostname:
+    sudo nano /etc/hostname
+    sudo nano /etc/hosts
+
+🔹 Text Editing (Nano)
+----------------------
+Edit File:
+    sudo nano [file path]
+
+Useful Log Files:
+    sudo nano /var/log/messages
+    sudo nano /var/log/syslog
+    sudo nano /var/log/dmesg
+
+🔹 Power and Temperature
+------------------------
+Check Pi Temperature:
+    /usr/bin/vcgencmd measure_temp
+
+🔹 EEPROM Update (Pi 4 Only)
+----------------------------
+Check EEPROM Update:
+    sudo rpi-eeprom-update
+
+Apply EEPROM Update:
+    sudo rpi-eeprom-update -a
+    sudo reboot
+
+🔹 Advanced Tips
+----------------
+Dynamic DNS Setup (NoIP)
+Minecraft Server Hosting
+Setup Recursive DNS Server
+
+📌 Resources:
+------------
+- https://pimylifeup.com
+- https://raspberrypi.com/documentation/
+
