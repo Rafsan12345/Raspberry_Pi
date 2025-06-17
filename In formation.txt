@@ -1,0 +1,111 @@
+spberrypi@raspberrypi:~ $ python --version
+Python 3.11.2
+raspberrypi@raspberrypi:~ $ nano hello.py
+raspberrypi@raspberrypi:~ $ python3 hello.py
+HI
+raspberrypi@raspberrypi:~ $ sudo apt instlall code
+E: Invalid operation instlall
+raspberrypi@raspberrypi:~ $ sudo apt install code 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  code
+0 upgraded, 1 newly installed, 0 to remove and 100 not upgraded.
+Need to get 99.2 MB of archives.
+After this operation, 352 MB of additional disk space will be used.
+Get:1 http://archive.raspberrypi.com/debian bookworm/main armhf code armhf 1.101.0-1749655229 [99.2 MB]
+Fetched 99.2 MB in 11s (8,730 kB/s)                                            
+Preconfiguring packages ...
+Selecting previously unselected package code.
+(Reading database ... 137083 files and directories currently installed.)
+Preparing to unpack .../code_1.101.0-1749655229_armhf.deb ...
+Unpacking code (1.101.0-1749655229) ...
+Setting up code (1.101.0-1749655229) ...
+Processing triggers for gnome-menus (3.36.0-1.1) ...
+Processing triggers for shared-mime-info (2.2-1) ...
+Processing triggers for mailcap (3.70+nmu1) ...
+Processing triggers for desktop-file-utils (0.26-1) ...
+raspberrypi@raspberrypi:~ $ code
+raspberrypi@raspberrypi:~ $ 
+
+
+
+
+
+
+..................................
+
+
+
+
+
+
+raspberrypi@raspberrypi:~ $ python3 hellow.py
+python3: can't open file '/home/raspberrypi/hellow.py': [Errno 2] No such file or directory
+raspberrypi@raspberrypi:~ $ 
+
+
+
+
+..................................
+
+
+raspberrypi@raspberrypi:~ $ python3 hello.py
+
+Enter 1st number: 5
+Enter 2nd number: 5
+Sum of 5 and 5 is 10
+raspberrypi@raspberrypi:~ $ 
+
+
+
+
+
+..........................................
+
+
+
+
+sudo apt update
+sudo apt install python3-opencv
+......................................
+
+
+
+
+Swapfile বাড়ানোর ধাপ:
+bash
+Copy
+Edit
+sudo dphys-swapfile swapoff
+sudo nano /etc/dphys-swapfile
+🔍 এই লাইনটা খুঁজুন:
+
+ini
+Copy
+Edit
+CONF_SWAPSIZE=100
+🔁 এটা বদলে লিখুন:
+
+ini
+Copy
+Edit
+CONF_SWAPSIZE=2048
+2048 মানে 2GB swap
+
+সেভ করুন:
+
+Ctrl + X, তারপর Y, তারপর Enter
+
+এবার নিচের কমান্ড দিন:
+
+bash
+Copy
+Edit
+sudo dphys-swapfile setup
+sudo dphys-swapfile swapon
+✅ এখন আপনার Raspberry Pi এর RAM কার্যত 2GB হয়ে গেছে (1GB RAM + 2GB Swap)
+
+
+
