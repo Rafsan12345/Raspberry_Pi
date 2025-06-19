@@ -151,6 +151,9 @@ Vertual Enviroment create
 
 python3.11 -m venv ai-env
 source ai-env/bin/activate
+,
+,
+deactivate
 
 ..............................................................................
 
