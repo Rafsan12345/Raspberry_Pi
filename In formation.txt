@@ -146,6 +146,34 @@ sudo reboot
 🧪
 ...........................................................................
 
+Vertual Enviroment create 
+
+
+python3.11 -m venv ai-env
+source ai-env/bin/activate
+
+..............................................................................
+
+system package update and PIP
+
+sudo apt update
+sudo apt install python3.11-venv python3-pip -y
+.............................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
