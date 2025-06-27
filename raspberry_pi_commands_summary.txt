@@ -10,6 +10,9 @@ Find Raspberry Pi Model:
 Get Total and Free Memory:
     free -h
 
+SD card Storage :
+    df -h
+
 Check OS Version:
     cat /etc/os-release
 
